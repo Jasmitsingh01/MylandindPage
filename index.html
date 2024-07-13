@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmit Singh Resume 📄</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+    
+     <div>   
+      <header>
+      <nav>
+          <img src="/public/logo.png" class="logo" alt="logo" >
+           <i>=</i>
+          <ul class="navigation">
+              <li><a href="#">Home</a></li>  
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+
+              <li><a href="#contact">Contact</a></li>
+
+          </ul>
+      </nav>
+  </header>
+  <main>
+      <section id="hero">
+        <div >
+          <h1>Jasmit Singh</h1>
+          <h3>Software Engineer</h3>
+          <p>I'm a passionate software engineer with a strong background in building scalable and user-friendly web applications. I specialize in modern JavaScript frameworks and enjoy collaborating with teams to deliver high-quality solutions.</p>
+          <button class="dark" onclick="download('./public/Jasmit.pdf')">View Resume</button>
+          <button onclick="moveToUrl('#contact')">Contact Me</button>
+        </div>
+        <div class="profile-img">
+          <img src="/public/My.jpg" alt="hero">
+        </div>
+      </section>
+      <section id="work">
+          <h2>Work Experience</h2>
+          <p class="sub">I've had the opportunity to work with a variety of companies and technologies, gaining valuable experience in the software engineering field.</p>
+          <div class="container">
+              <div class="card">
+                  <h3>Frontend developer</h3>
+                  <h4>SoftiCation Technology Pvt. Ltd.</h4>
+                  <h4>March 2024 - Present</h4>
+                  <p>As a frontend developer, I've had the opportunity to work on a variety of
+                      projects, including developing web applications, mobile applications,
+                      and backend systems. I've also had the chance to work with a variety of
+                      technologies, including JavaScript, React, Node.js, and MongoDB.</p>
+                      
+                  </div>
+          </div>
+      </section>
+      <section id="project">
+          <h2>Projects</h2>
+          <p class="sub">I've had the opportunity to work on a variety of projects,
+              including web applications and backend systems.</p>
+              <div class="container">
+                  <div class="card">
+                      <h3>Dnk Ecommerce Website</h3>
+                      <p>Created an eCommerce website that allows sellers to showcase their products by posting pictures, adding descriptions, including rate tags, and also allows the users to compare similar products by different sellers.</p>
+                      <div>
+                          <button class="dark" onclick="moveToUrl('https://dnkecommerce.netlify.app')">Live demo</button>
+
+                          <button onclick="moveToUrl('https://github.com/Jasmitsingh01/Dnk_Frontend')">Github</button>
+                      </div>
+                     
+
+                  </div>
+                  <div class="card">
+                      <h3>Twitter Clone</h3>
+                      <p>Built a Twitter clone with features like user login, registration, creating and deleting a tweet, adding an image to a tweet, liking and disliking a tweet, adding and replying to a tweet, retweet, read all the tweets in an app, create and edit a user, follow and unfollow user, view a user profile details, update profile picture including uploading images using multer, etc.</p>
+                      <div>
+                        <button class="dark" disabled onclick="moveToUrl()"><mark style="background-color: red;">Not Live Yet</mark></button>
+
+                          <button onclick="moveToUrl('https://github.com/Jasmitsingh01/twitter-clone')">Github</button>
+                      </div>
+                     
+
+                  </div>
+                  <div class="card">
+                      <h3>Hospo tribe (Resturant Empoylee Recuitment App)</h3>
+                      <p>This real world Project . This project basically used for hiring employee and assign task to them .In this website the Restaurant owner  can post job and Employee see the job post and apply to job post. The Restaurant owner also manage their Restaurant assign task to their employee and track the task and also manage their
+                        restaurant property.</p>
+                      <div>
+                        <button class="dark" onclick="moveToUrl('https://app.hospotribe.com/login')">Live demo</button>
+
+                          <button onclick="moveToUrl('https://github.com/Jasmitsingh01/hospo_front')">Github</button>
+                      </div>
+                     
+
+                  </div>
+              </div>
+      </section>
+      <section id="skills">
+          <h2>Skills</h2>
+          <p class="sub">
+              Here are the technologies and tools I'm proficient in.
+
+
+          </p>
+          <div class="container">
+              <div class="card">
+                  <h3>Frontend Technology</h3>
+                  <ul class="list">
+                      <li>HTML5</li>
+                      <li>Css</li>
+                      <li>JavaScript</li>
+                      <li>React</li>
+
+                  </ul>
+              </div>
+              <div class="card">
+                <h3>Backend Technology</h3>
+                <ul class="list">
+                    <li>Nodejs</li>
+                    <li>Express</li>
+                    <li>Mongodb</li>
+                    <li>Mysql</li>
+
+                </ul>
+            </div>
+            <div class="card">
+              <h3>Other Technology</h3>
+              <ul class="list">
+                  <li>Git/Github</li>
+                  <li>C/C++</li>
+                  <li>Pyhton</li>
+                  <li>Docker</li>
+
+              </ul>
+          </div>
+          </div>
+      </section>
+      <section id="contact">
+          <h2>Contact Me</h2>
+          <p class="sub">
+              Feel free to reach out to me for any inquiries or opportunities.
+          </p>
+          <form action="#">
+              <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" placeholder="Enter your name"/>
+
+              </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" id="email" placeholder="Enter your email"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+
+          </form>
+      </section>
+
+
+  </main>
+  <footer >
+      
+        <p >© 2024 Jasmit singh. All rights reserved.</p>
+        <nav  >
+         <ul class="navigation ">
+          <li> <a  href="#" rel="ugc">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-5 h-5"
+              >
+                <path d="m22 13.29-3.33-10a.42.42 0 0 0-.14-.18.38.38 0 0 0-.22-.11.39.39 0 0 0-.23.07.42.42 0 0 0-.14.18l-2.26 6.67H8.32L6.1 3.26a.42.42 0 0 0-.1-.18.38.38 0 0 0-.26-.08.39.39 0 0 0-.23.07.42.42 0 0 0-.14.18L2 13.29a.74.74 0 0 0 .27.83L12 21l9.69-6.88a.71.71 0 0 0 .31-.83Z"></path>
+              </svg>
+            </a></li>
+          <li>
+              <a  href="#" rel="ugc">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect width="4" height="12" x="2" y="9"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+          </li>
+          <li>
+              <a  href="#" rel="ugc">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                  </svg>
+                </a>
+          </li>
+         </ul>
+         
+        
+      </nav>
+    </footer>
+  </div>
+  <div id="follower">
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+  </div>
+          <script src="/script.js"></script>
+    </body>
+</body>
+</html>
