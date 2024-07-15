@@ -210,6 +210,9 @@ button:hover {
   border: 2px solid transparent;
   padding: 5px;
 }
+section{
+  background-color: white;
+}
 .list li{
  margin-bottom: 10px;
 }
