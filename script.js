@@ -49,6 +49,7 @@ function download(url) {
 function moveToUrl(url) {
   const a = document.createElement('a')
   a.href = url
+  a.target='_blank'
     document.body.appendChild(a)
   a.click()
   document.body.removeChild(a)
