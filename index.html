@@ -12,7 +12,10 @@
      <div>   
       <header>
       <nav>
-          <img src="/public/logo.png" class="logo" alt="logo" >
+          <img src="/public/code.svg" class="logo" alt="logo" >
+          <button type="button" onclick="toggleMenu()" class="menu">
+            <span class="menu-icon">&#9776;</span>
+          </button>
           <ul class="navigation">
               <li><a href="#">Home</a></li>  
               <li><a href="#project">Projects</a></li>
@@ -36,6 +39,106 @@
           <img src="/public/My.jpg" alt="hero">
         </div>
       </section>
+      <section id="project">
+        <h2>Projects</h2>
+        <p class="sub">I've had the opportunity to work on a variety of projects,
+            including web applications and backend systems.</p>
+            <div class="container">
+                <div class="card">
+                    <h3>Dnk Ecommerce Website</h3>
+                    <p>Created an eCommerce website that allows sellers to showcase their products by posting pictures, adding descriptions, including rate tags, and also allows the users to compare similar products by different sellers.</p>
+                    <div>
+                        <button class="dark" onclick="moveToUrl('https://dnkecommerce.netlify.app')">Live demo</button>
+
+                        <button onclick="moveToUrl('https://github.com/Jasmitsingh01/Dnk_Frontend')">Github</button>
+                    </div>
+                   
+
+                </div>
+                <div class="card">
+                    <h3>Twitter Clone</h3>
+                    <p>Built a Twitter clone with features like user login, registration, creating and deleting a tweet, adding an image to a tweet, liking and disliking a tweet, adding and replying to a tweet, retweet, read all the tweets in an app, create and edit a user, follow and unfollow user, view a user profile details, update profile picture including uploading images using multer, etc.</p>
+                    <div>
+                      <button class="dark" disabled onclick="moveToUrl()">
+                        Not Live Yet</button>
+
+                        <button onclick="moveToUrl('https://github.com/Jasmitsingh01/twitter-clone')">Github</button>
+                    </div>
+                   
+
+                </div>
+                <div class="card">
+                    <h3>Hospo tribe (Resturant Empoylee Recuitment App)</h3>
+                    <p>This real world Project . This project basically used for hiring employee and assign task to them .In this website the Restaurant owner  can post job and Employee see the job post and apply to job post. The Restaurant owner also manage their Restaurant assign task to their employee and track the task and also manage their
+                      restaurant property.</p>
+                    <div>
+                      <button class="dark" onclick="moveToUrl('https://app.hospotribe.com/login')">Live demo</button>
+
+                        <button onclick="moveToUrl('https://github.com/Jasmitsingh01/hospo_front')">Github</button>
+                    </div>
+                   
+
+                </div>
+            </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <p class="sub">
+            Here are the technologies and tools I'm proficient in.
+
+
+        </p>
+        <marquee behavior="scroll"  loop="true">
+          <img src="/public/html.svg" alt="HTML5">
+          <img src="/public/css.svg" alt="CSS3">
+          <img src="/public/javascript.svg" alt="JavaScript">
+          <img src="/public/react.svg" alt="React">
+          <img src="/public/nodejs.svg" alt="Nodejs">
+          <img src="/public/mongodb.svg" alt="MongoDB">
+          <img src="/public/mysql.svg" alt="MySQL">
+          <img src="/public/git.svg" alt="Git/Github">
+          <img src="/public/cpp.svg" alt="C/C++">
+          <img src="/public/python.svg" alt="Python">
+          <img src="/public/docker.svg" alt="Docker">
+
+          <img src="/public/express.svg" alt="Express">
+
+        </marquee>
+        <div class="container">
+            <div class="card">
+                <h3>Frontend Technology</h3>
+                <ul class="list">
+                    <li>HTML5</li>
+                    <li>Css</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+
+                </ul>
+            </div>
+            <div class="card">
+              <h3>Backend Technology</h3>
+              <ul class="list">
+                  <li>Nodejs</li>
+                  <li>Express</li>
+                  <li>Mongodb</li>
+                  <li>Mysql</li>
+
+              </ul>
+          </div>
+          <div class="card">
+            <h3>Other Technology</h3>
+            <ul class="list">
+                <li>Git/Github</li>
+                <li>C/C++</li>
+                <li>Pyhton</li>
+                <li>Docker</li>
+                <li>Typescript</li>
+                <li>Jenkins</li>
+
+            </ul>
+        </div>
+        </div>
+    </section>
       <section id="work">
           <h2>Work Experience</h2>
           <p class="sub">I've had the opportunity to work with a variety of companies and technologies, gaining valuable experience in the software engineering field.</p>
@@ -47,92 +150,12 @@
                   <p>As a frontend developer, I've had the opportunity to work on a variety of
                       projects, including developing web applications, mobile applications,
                       and backend systems. I've also had the chance to work with a variety of
-                      technologies, including JavaScript, React, Node.js, and MongoDB.</p>
+                      technologies, including JavaScript, React js, Next js, Node.js, and MongoDB.</p>
                       
                   </div>
           </div>
       </section>
-      <section id="project">
-          <h2>Projects</h2>
-          <p class="sub">I've had the opportunity to work on a variety of projects,
-              including web applications and backend systems.</p>
-              <div class="container">
-                  <div class="card">
-                      <h3>Dnk Ecommerce Website</h3>
-                      <p>Created an eCommerce website that allows sellers to showcase their products by posting pictures, adding descriptions, including rate tags, and also allows the users to compare similar products by different sellers.</p>
-                      <div>
-                          <button class="dark" onclick="moveToUrl('https://dnkecommerce.netlify.app')">Live demo</button>
-
-                          <button onclick="moveToUrl('https://github.com/Jasmitsingh01/Dnk_Frontend')">Github</button>
-                      </div>
-                     
-
-                  </div>
-                  <div class="card">
-                      <h3>Twitter Clone</h3>
-                      <p>Built a Twitter clone with features like user login, registration, creating and deleting a tweet, adding an image to a tweet, liking and disliking a tweet, adding and replying to a tweet, retweet, read all the tweets in an app, create and edit a user, follow and unfollow user, view a user profile details, update profile picture including uploading images using multer, etc.</p>
-                      <div>
-                        <button class="dark" disabled onclick="moveToUrl()"><mark style="background-color: red;">Not Live Yet</mark></button>
-
-                          <button onclick="moveToUrl('https://github.com/Jasmitsingh01/twitter-clone')">Github</button>
-                      </div>
-                     
-
-                  </div>
-                  <div class="card">
-                      <h3>Hospo tribe (Resturant Empoylee Recuitment App)</h3>
-                      <p>This real world Project . This project basically used for hiring employee and assign task to them .In this website the Restaurant owner  can post job and Employee see the job post and apply to job post. The Restaurant owner also manage their Restaurant assign task to their employee and track the task and also manage their
-                        restaurant property.</p>
-                      <div>
-                        <button class="dark" onclick="moveToUrl('https://app.hospotribe.com/login')">Live demo</button>
-
-                          <button onclick="moveToUrl('https://github.com/Jasmitsingh01/hospo_front')">Github</button>
-                      </div>
-                     
-
-                  </div>
-              </div>
-      </section>
-      <section id="skills">
-          <h2>Skills</h2>
-          <p class="sub">
-              Here are the technologies and tools I'm proficient in.
-
-
-          </p>
-          <div class="container">
-              <div class="card">
-                  <h3>Frontend Technology</h3>
-                  <ul class="list">
-                      <li>HTML5</li>
-                      <li>Css</li>
-                      <li>JavaScript</li>
-                      <li>React</li>
-
-                  </ul>
-              </div>
-              <div class="card">
-                <h3>Backend Technology</h3>
-                <ul class="list">
-                    <li>Nodejs</li>
-                    <li>Express</li>
-                    <li>Mongodb</li>
-                    <li>Mysql</li>
-
-                </ul>
-            </div>
-            <div class="card">
-              <h3>Other Technology</h3>
-              <ul class="list">
-                  <li>Git/Github</li>
-                  <li>C/C++</li>
-                  <li>Pyhton</li>
-                  <li>Docker</li>
-
-              </ul>
-          </div>
-          </div>
-      </section>
+    
       <section id="contact">
           <h2>Contact Me</h2>
           <p class="sub">

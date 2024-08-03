@@ -54,3 +54,19 @@ function moveToUrl(url) {
   a.click()
   document.body.removeChild(a)
 }
+
+// Toggle Dark Mode
+
+function toggleMenu() {
+  if(document.getElementsByClassName('navigation')[0].style.display=='none')
+{
+  document.getElementsByClassName('navigation')[0].style.display='flex'
+  document.getElementsByClassName('menu-icon')[0].innerHTML='X'
+}
+  else{
+  document.getElementsByClassName('navigation')[0].style.display='none'
+  document.getElementsByClassName('menu-icon')[0].innerHTML='&#9776;'
+
+}
+ 
+}

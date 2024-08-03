@@ -14,29 +14,50 @@ header nav {
   align-items: center;
   padding: 20px 10%;
 }
+.menu{
+  display: none;
+}
+.menu-icon{
+  font-size: 18px;
+  font-weight: bold;
+}
 .navigation {
   display: flex;
   list-style: none;
   gap: 20px;
   align-items: center;
   justify-content: end;
+  color: white;
+
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   object-fit: cover;
   background: transparent;
 
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
+  header nav {
+   position: relative;
+  }
   header nav .navigation {
     display: none;
   }
-  .navigation{
-    justify-content: center;
+  .menu{
+    display: block;
   }
+ .navigation{
+  position: absolute;
+  top:80px;
+  display: flex;
+  width: 100%;
+left: 0;
+justify-content: center;
+
+}
 }
 /* Header Section end */
 
@@ -46,6 +67,7 @@ header nav {
   display: flex;
   min-height: 100vh;
   align-items: center;
+  margin-bottom: 30px;
 }
 #hero h1,
 h3 {
@@ -61,14 +83,16 @@ h3 {
   color: gray;
 }
 #hero p {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 25px;
   margin-bottom: 20px;
-  padding: 10px;
+  width: 65%;
 }
 .profile-img {
-  width: 50%;
+  width: 70%;
   margin-bottom: 5px;
+  aspect-ratio: 3/4;
+  border-radius: 50px;
 }
 .profile-img img {
   width: 100%;
@@ -80,10 +104,13 @@ h3 {
   #hero {
     flex-direction: column-reverse;
     min-height: 0;
+    position: relative;
+    top: 30px;
   }
 }
 /* footer  section*/
 footer {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,10 +124,20 @@ footer a:hover{
 
 section {
   padding: 30px 50px;
-  min-height: 50vh;
+  min-height: 70vh;
   
 }
+marquee{
+  display: flex;
+  align-items: center;
+ 
 
+}
+marquee img{
+  width: 100px;
+  height: 100px;
+  margin: 0 30px;
+}
 section h2 {
   font-size: 40px;
   font-weight: 700;
@@ -108,7 +145,7 @@ section h2 {
   text-align: center;
 }
 section .sub {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   margin-bottom: 20px;
   text-align: center;
@@ -131,6 +168,7 @@ button {
   margin: 4px;
   font-weight: 700;
   transition: all 0.3s ease-in-out;
+  border: 1px solid rgb(172, 168, 168);
 }
 button:hover {
   background-color: #000;
@@ -141,7 +179,7 @@ button:hover {
   grid-template-columns: repeat(3, 1fr);
   padding: 0 50px;
   justify-content: center;
-  align-items: center;
+
 }
 .container .card {
   padding: 10px;
@@ -152,17 +190,18 @@ button:hover {
   object-fit: cover;
 }
 .container .card h3 {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 800;
   margin: 10px 0;
 }
 .container .card p {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
+  line-height: 20px;
   margin: 10px 0;
 }
 .container .card h4 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   margin: 10px 0;
 }
